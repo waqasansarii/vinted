@@ -40,10 +40,10 @@ const CategoryDropDown = () => {
         if (openBrand) {
             setOpenBrand(!openBrand)
         }
-        if(openCondition){
+        if (openCondition) {
             setOpenCondition(!openCondition)
         }
-        if(openPrice){
+        if (openPrice) {
             setOpenPrice(!openPrice)
         }
         // if(!open){
@@ -110,10 +110,10 @@ const CategoryDropDown = () => {
         if (openBrand) {
             setOpenBrand(!openBrand)
         }
-        if(openCondition){
+        if (openCondition) {
             setOpenCondition(!openCondition)
         }
-        if(openPrice){
+        if (openPrice) {
             setOpenPrice(!openPrice)
         }
     }
@@ -159,10 +159,10 @@ const CategoryDropDown = () => {
         if (openBrand) {
             setOpenBrand(!openBrand)
         }
-        if(openCondition){
+        if (openCondition) {
             setOpenCondition(!openCondition)
         }
-        if(openPrice){
+        if (openPrice) {
             setOpenPrice(!openPrice)
         }
     }
@@ -191,124 +191,124 @@ const CategoryDropDown = () => {
         if (openColor) {
             setOpenColor(!openColor)
         }
-        if(openCondition){
+        if (openCondition) {
             setOpenCondition(!openCondition)
         }
-        if(openPrice){
+        if (openPrice) {
             setOpenPrice(!openPrice)
         }
     }
 
     // functions for condition drop down 
 
-    let [ openCondition, setOpenCondition] = useState(false)
+    let [openCondition, setOpenCondition] = useState(false)
 
-   const handleCondition=()=> {
-       setOpenCondition(!openCondition)
-       if (open) {
-        setOpen(!open)
-    }
-    if (category) {
-        setCategory(!category)
-    }
-    if (subCategory) {
-        setSubCategory(!subCategory)
-    }
-    if (opensize) {
-        setOpenSize(!opensize)
-    }
-    if (sizeStepTow) {
-        setsizeStepTow(!sizeStepTow)
-    }
-    if (openColor) {
-        setOpenColor(!openColor)
-    }
-    if(openBrand){
-        setOpenBrand(!openBrand)
-    }
-    if(openPrice){
-        setOpenPrice(!openPrice)
-    }
-   }
-
-//    functions for price drop down 
-
- let [openPrice, setOpenPrice] = useState(false)
-
- const handlePrice =() => {
-     setOpenPrice(!openPrice)
-     if (open) {
-        setOpen(!open)
-    }
-    if (category) {
-        setCategory(!category)
-    }
-    if (subCategory) {
-        setSubCategory(!subCategory)
-    }
-    if (opensize) {
-        setOpenSize(!opensize)
-    }
-    if (sizeStepTow) {
-        setsizeStepTow(!sizeStepTow)
-    }
-    if (openColor) {
-        setOpenColor(!openColor)
-    }
-    if(openBrand){
-        setOpenBrand(!openBrand)
-    }
-    if(openCondition){
+    const handleCondition = () => {
         setOpenCondition(!openCondition)
+        if (open) {
+            setOpen(!open)
+        }
+        if (category) {
+            setCategory(!category)
+        }
+        if (subCategory) {
+            setSubCategory(!subCategory)
+        }
+        if (opensize) {
+            setOpenSize(!opensize)
+        }
+        if (sizeStepTow) {
+            setsizeStepTow(!sizeStepTow)
+        }
+        if (openColor) {
+            setOpenColor(!openColor)
+        }
+        if (openBrand) {
+            setOpenBrand(!openBrand)
+        }
+        if (openPrice) {
+            setOpenPrice(!openPrice)
+        }
     }
- }
+
+    //    functions for price drop down 
+
+    let [openPrice, setOpenPrice] = useState(false)
+
+    const handlePrice = () => {
+        setOpenPrice(!openPrice)
+        if (open) {
+            setOpen(!open)
+        }
+        if (category) {
+            setCategory(!category)
+        }
+        if (subCategory) {
+            setSubCategory(!subCategory)
+        }
+        if (opensize) {
+            setOpenSize(!opensize)
+        }
+        if (sizeStepTow) {
+            setsizeStepTow(!sizeStepTow)
+        }
+        if (openColor) {
+            setOpenColor(!openColor)
+        }
+        if (openBrand) {
+            setOpenBrand(!openBrand)
+        }
+        if (openCondition) {
+            setOpenCondition(!openCondition)
+        }
+    }
 
     return (
         <div className='ms-4 catalog_drop_down_container'>
             <div className='list_drop_downs'>
                 <div>
                     <p onClick={handleOpen} className='catalog_tag'>Catalog <FcExpand /></p>
+                    <CategoryDropDownMenu
+                        openDropDown={open}
+                        women={category}
+                        handleShowWomen={handleShowWomen}
+                        handleBack={handleBack}
+                        value={value}
+                        valueTwo={valueTwo}
+                        handleStepTwo={handleStepTwo}
+                        stepThree={subCategory}
+                        handleBacktwo={handleBacktwo}
+                    />
                 </div>
-                <CategoryDropDownMenu
-                    openDropDown={open}
-                    women={category}
-                    handleShowWomen={handleShowWomen}
-                    handleBack={handleBack}
-                    value={value}
-                    valueTwo={valueTwo}
-                    handleStepTwo={handleStepTwo}
-                    stepThree={subCategory}
-                    handleBacktwo={handleBacktwo}
-                />
-                <div className='size_drop_down'>
+                <div className='size_drop_down2'>
                     <p onClick={handleSize} className='catalog_tag'>size <FcExpand /></p>
+                    <SizeDropDown
+                        opensize={opensize}
+                        handleName={handleName}
+                        valueSize={valueSize}
+                        handleBackSize={handleBackSize}
+                        sizeStepTow={sizeStepTow}
+                    />
                 </div>
-                <SizeDropDown
-                    opensize={opensize}
-                    handleName={handleName}
-                    valueSize={valueSize}
-                    handleBackSize={handleBackSize}
-                    sizeStepTow={sizeStepTow}
-                />
-                <div className='size_drop_down'>
+                <div className='size_drop_down3'>
                     <p onClick={handleColor} className='catalog_tag'>color <FcExpand /></p>
+                    <ColorDropDown
+                        openColor={openColor}
+                    />
                 </div>
-                <ColorDropDown
-                    openColor={openColor}
-                />
 
-                <div className='size_drop_down'>
+                <div className='size_drop_down4'>
                     <p onClick={handleBrand} className='catalog_tag'>Brand <FcExpand /></p>
+                    <BrandDropDown openBrand={openBrand} />
                 </div>
-                <BrandDropDown openBrand={openBrand} />
-                <div className='size_drop_down'>
+                <div className='size_drop_down5'>
                     <p onClick={handlePrice} className='catalog_tag'>Price <FcExpand /></p>
+                    <PriceDropDown openPrice={openPrice} />
                 </div>
-                <PriceDropDown  openPrice={openPrice}/>
-                <div className='size_drop_down'>
+                <div className='size_drop_down6'>
                     <p onClick={handleCondition} className='catalog_tag'>Condition <FcExpand /></p>
+                    <ConditionDropDown openCondition={openCondition} />
                 </div>
-                <ConditionDropDown openCondition={openCondition} />
             </div>
         </div>
     )
