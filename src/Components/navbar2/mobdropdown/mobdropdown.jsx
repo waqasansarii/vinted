@@ -11,7 +11,6 @@ const MobDropDown = ({closeFunc}) => {
             <div className='main_mob_div'>
                 <div className='btns_div_mobview'>
                     <Btns closeFunc={closeFunc}/>
-                       
                 </div>
                 <div>
                     <p className='category_tag'>Categories</p>

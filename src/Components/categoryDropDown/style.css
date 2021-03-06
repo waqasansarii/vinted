@@ -3,6 +3,9 @@
     /* height: 60vh; */
     /* margin-right:250px; */
 }
+.list_drop_downs{
+    display: flex;
+}
 .catalog_tag{
     font-weight: 700;
     color: gray;
@@ -36,6 +39,10 @@
 .dropDown_menu_container{
     position: absolute;
     z-index: 1111;
+    top: 320px;
+}
+.size_drop_down{
+    margin-left: 30px;
 }
 .menu_icons{
     color: rgb(59, 187, 187);
@@ -72,4 +79,69 @@
 }
 .MuiPaper-elevation1{
     box-shadow: none !important;
+}
+
+            
+          /* SIZE DROP DOWN  */
+
+
+.dropDown_menusize_container{
+    position: absolute;
+    top: 320px;
+    left: 180px;
+}
+
+    /* COLOR DROP DOWN  */
+
+.clr{
+  width: 20px; 
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.dropDown_menucolor_container{
+    position: absolute;
+    top: 320px;
+    left: 270px;
+}
+
+
+    /* BRAND DROP DOWN  */
+
+.dropDown_menuBrand_container{
+   position: absolute;
+   top: 320px;
+   left: 350px;
+} 
+
+/* price drop down  */
+
+.dropDown_menuPrice_container{
+    position: absolute;
+    top: 320px;
+    left: 450px;
+}
+.inputF{
+    width: 60px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(185, 183, 183);
+}
+.catalog_list_price_ul{
+    width: 200px;
+    /* height: 100px; */
+}
+.catalog_list_price_ul>li{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+
+ /* condition drop down  */
+
+.dropDown_menuCondition_container{
+    position: absolute;
+    top: 320px;
+    left: 540px;
 }

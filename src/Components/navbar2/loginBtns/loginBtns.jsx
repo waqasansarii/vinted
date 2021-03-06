@@ -27,7 +27,7 @@ const Btns = ({ className ,closeFunc}) => {
   return (
     <div className={className}>
       <div className="btns_div">
-        <button className="acount_btn" onClick={() => {history.push("/signup");{func?closeFunc():null } }}>
+        <button className="acount_btn" onClick={() => {history.push("/signup");{if(func) closeFunc() } }}>
           Sign up
         </button>
         <button className="acount_btn" onClick={() => {history.push("/signin");{func?closeFunc():null }}}>

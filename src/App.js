@@ -9,6 +9,10 @@ import Navbar from './Components/navbar2/index'
 import ItemInfoPage from './Pages/item_info_page'
 import Signup from './Pages/Signup'
 import Signin from './Pages/Login'
+import GetAppScreen from './Pages/getapp'
+import HelpCenterPage from './Pages/helpcneter'
+import InfoBoard from './Pages/infoboard'
+import HowItWork from './Pages/howItWork'
 // import Second_Nav from "./Layout/Second_Nav";
 
 function App() {
@@ -34,8 +38,12 @@ function App() {
               <Signin />
             </Route>
             <Route path='/offer' component={ItemInfoPage} />
-
+            <Route path='/app'  component={GetAppScreen} />
+            <Route path='/help-center' component={HelpCenterPage}  />
+            <Route path='/infoboard' component={InfoBoard} />
+            <Route path='/how-it-work' component={HowItWork} />
           </Switch>
+
         </Router>
       </React.Fragment>
     </div>

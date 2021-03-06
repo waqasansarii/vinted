@@ -25,22 +25,22 @@ function About_Tab() {
           </thead>
           <tbody>
             <tr>
-              <td className="Tab_Pan_About_table_td">How it works</td>
+              <td className="Tab_Pan_About_table_td" onClick={()=>send_Page('/how-it-work')}>How it works</td>
               <td className="Tab_Pan_About_table_td">trust and safety</td>
               <td className="Tab_Pan_About_table_td">forum</td>
             </tr>
             <tr>
-              <td className="Tab_Pan_About_table_td">mobail apps</td>
+              <td className="Tab_Pan_About_table_td" onClick={()=>send_Page('/app')}>mobail apps</td>
               <td className="Tab_Pan_About_table_td">privacy policy</td>
             </tr>
             <tr>
-              <td className="Tab_Pan_About_table_td"> help center</td>
+              <td className="Tab_Pan_About_table_td" onClick={()=>send_Page('/help-center')}> help center</td>
               <td className="Tab_Pan_About_table_td">
                 terms & conditions
               </td>
             </tr>
             <tr>
-              <td className="Tab_Pan_About_table_td">info board</td>
+              <td className="Tab_Pan_About_table_td" onClick={()=>send_Page('/infoboard')}>info board</td>
               <td className="Tab_Pan_About_table_td">cookie policy</td>
             </tr>
           </tbody>
