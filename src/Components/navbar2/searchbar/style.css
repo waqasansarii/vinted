@@ -41,7 +41,7 @@
 .clear_search {
   text-align: right;
   font-size: 2em;
-  margin-top: -6px;
+  margin-top: -10px;
   font-weight: 700;
 }
 .clear_search:hover {
@@ -88,9 +88,29 @@
     margin: 0 auto;
 }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 405px) {
     .search_container {
-      width: 82%;
+      /* border: 2px solid; */
+      width: 100%;
+      padding: 0px 10px;
   }
+  .select > option{
+        padding: 0px;
+    }
+    .select{
+      padding: 10px 0px;
+      font-size: .8em;
+    }
+    .search_div{
+      height: 37px;
+      /* width: 100%; */
+    }
+    .clear_search{
+      font-size: 1.2em;
+    }
+    .search_bar{
+      font-size: .8em;
+      width: 100%;
+    }
   }
   
